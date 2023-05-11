@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bienvenido a Mi Página Web</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #333;
+			font-size: 3em;
+			margin: 2em 0 1em;
+			text-align: center;
+		}
+		p {
+			color: #666;
+			margin: 0 auto 2em;
+			max-width: 600px;
+			text-align: center;
+		}
+		a {
+			color: #0077cc;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bienvenido a Mi Página Web</h1>
+	<p>Gracias por visitar mi sitio web. Aquí encontrarás información interesante sobre diferentes temas.</p>
+
+	{% if msg != "" %}
+		<p>{{ msg }}</p>
+	{% endif %}
+
+	
+</body>
+</html>
